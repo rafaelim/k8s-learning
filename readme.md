@@ -4,7 +4,7 @@
 
 ### Windows
 
-`$ > choco install minikube`
+`$ > choco install minikube`\
 `$ > choco install kubernetes-cli`
 
 ## Running locally
@@ -15,7 +15,7 @@
 
 ### Using a local docker image
 
-`$ > minikube docker-env | Invoke-Expression`
+`$ > minikube docker-env | Invoke-Expression`\
 `$ > docker build -t {image_name} .`
 
 > Set the image name in the yaml file to use it, and set `image-pull-policy` as Never.
@@ -30,8 +30,8 @@
 
 #### CRUD commands
 
-`$ > kubectl create deployment [name]`
-`$ > kubectl edit deployment [name]`
+`$ > kubectl create deployment [name]`\
+`$ > kubectl edit deployment [name]`\
 `$ > kubectl delete deployment [name]`
 
 #### List components
@@ -40,18 +40,18 @@
 
 #### Debugging pods
 
-`$ > kubectl logs [name]`
-`$ > kubectl exec -it [name] -- bin/bash`
+`$ > kubectl logs [name]`\
+`$ > kubectl exec -it [name] -- bin/bash`\
 `$ > kubectl describe pod [name]`
 
 #### Using configuration file for CRUD
 
-`$ > kubectl apply -f [filanme]`
+`$ > kubectl apply -f [filanme]`\
 `$ > kubectl delete -f [filanme]`
 
 ### Namespaces
 
-`$ > kubectl create namespace [name]`
+`$ > kubectl create namespace [name]`\
 `$ > kubectl get namespace`
 
 ## Ingress
