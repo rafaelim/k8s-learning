@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta17
+kind: Config
+metadata:
+  name: nodejs-api
+build:
+  artifacts:
+    - image: sample-api-skaffold
+      docker:
+        dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+      - deploy/api-deployment.yaml
+      - deploy/api-ingress.yaml
